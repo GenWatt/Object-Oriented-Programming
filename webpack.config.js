@@ -3,14 +3,13 @@ const ExtractTextPlugin = require("extract-text-webpack-plugin");
 const HtmlWebpackPlugin = require("html-webpack-plugin");
 
 module.exports = {
-  entry: "./script.js",
+  entry: "./src/js/index.js",
   output: {
     filename: "bundle.js",
     path: path.resolve(__dirname, "./dist/js"),
   },
   module: {
-    rules: [
-      {
+    rules: [{
         test: /\.m?js$/,
         exclude: /(node_modules)/,
         use: {

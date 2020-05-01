@@ -12,16 +12,41 @@
         <h1>Quiz</h1>
     </header>
     <main>
-        <div class="conteiner">
-            <div class="question">JakTam?</div>
-            <div class="box">
+        <div class="start-board">
+            <h1>Zacznij Quiz!</h1>
+            <div class="options">
+                <div class="time-option">
+                    <h4>Czas na odpowiedź:</h4>
+                </div>
+                <div class="count-of-question-option">
+                    <h4>Ilość pytań:</h4>
+                </div>
             </div>
-            <button class="next" disabled>Next <span class="overlay"></span></button>
+            <button class="start-game">Zaczynamy!</button>
         </div>
 
+        <div class="conteiner">
+            <div class="info">
+                <button class="back-to-menu"><i class="fas fa-arrow-left"></i></button>
+                <div class="timer">
+                    <span class="current-time"></span>
+                    <span class="progress"></span>
+                    <span class="progress"></span>
+                </div>
+                <span class="current-question">1</span>
+                <span class="total-question">/3</span>
+            </div>
+            <div class="question"></div>
+            <div class="box">
+            </div>
+            <button class="next" disabled>Next </button>
+        </div>
+        <span class="overlay"></span>
     </main>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.0/anime.min.js"
         integrity="sha256-hBMojZuWKocCflyaG8T19KBq9OlTlK39CTxb8AUWKhY=" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/js/all.min.js"
+        integrity="sha256-KzZiKy0DWYsnwMF+X1DvQngQ2/FxF7MF3Ff72XcpuPs=" crossorigin="anonymous"></script>
 </body>
 
 </html>
