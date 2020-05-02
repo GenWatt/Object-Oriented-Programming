@@ -1,0 +1,30 @@
+@mixin display($display, $justify: center, $align: center) {
+    display: $display;
+    -webkit-box-pack: $justify;
+    justify-content: $justify;
+    -webkit-box-align: $align;
+    align-items: $align;
+}
+
+@mixin text($padding, $margin) {
+    text-align: center;
+    padding: $padding;
+    margin: $margin;
+}
+
+@mixin btn-style($width: 200px, $height: 100px) {
+    outline: none;
+    border: none;
+    cursor: pointer;
+    width: $width;
+    height: $height;
+}
+
+@mixin transition($elements: [], $time) {
+    -webkit-transition: $elements $time ease-in;
+    transition: $elements $time ease-in;
+}
+
+@mixin shadow($color, $color2) {
+    box-shadow: 3px 3px 10px $color, -3px -3px 10px $color2;
+}

@@ -11,11 +11,12 @@ class ShowMenu {
 
     displayMenu(result) {
         document.querySelector("body").style.overflowY = "hidden";
+        anime.remove(DOMElements.startBoard);
         anime({
             targets: DOMElements.startBoard,
             translateY: 0,
+            height: [0, 450],
         });
-        DOMElements.conteiner.classList.remove("show");
         reset();
         result.hideQuizBoard();
         Timer.clearTimer();

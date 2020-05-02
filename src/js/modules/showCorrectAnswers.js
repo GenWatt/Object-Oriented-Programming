@@ -4,6 +4,9 @@ import {
 import {
     quiz
 } from "../data/quiz";
+import {
+    DOMElements
+} from "../data/DOMElements";
 
 class ShowCorrectAnswers {
     constructor() {
@@ -20,7 +23,7 @@ class ShowCorrectAnswers {
         div.className = "show-answers-conteiner";
         div.innerHTML = "<h2>Odpowiedzi</h2>"
 
-        document.querySelector(".conteiner").appendChild(div);
+        document.querySelector("main").insertBefore(div, DOMElements.conteiner);
         this.index.forEach(element => this.createItems(element));
     }
     createItems(element) {

@@ -1,0 +1,44 @@
+@use './mixins.scss'as *;
+@use './variables.scss'as *;
+
+  .result-board {
+    background-color: rgb(172, 180, 52);
+    border-radius: 10px;
+    color: white;
+    display: grid;
+    min-height: 400px;
+
+    h1 {
+      text-align: center;
+      font-size: $font-high;
+    }
+
+    p {
+      margin-left: 20px;
+      font-size: $font-small;
+
+      strong {
+        font-weight: 900;
+        font-size: $font-medium;
+        color: rgb(56, 55, 55);
+      }
+    }
+
+    .button-box {
+      @include display(flex);
+
+      button {
+        @include btn-style();
+        @include transition(background-color, 0.5s);
+        background-color: rgb(214, 214, 69);
+        border-radius: 10px;
+        place-self: center;
+        font-size: $font-medium;
+        font-weight: bolder;
+
+        &:hover {
+          background-color: rgb(117, 117, 28);
+        }
+      }
+    }
+  }

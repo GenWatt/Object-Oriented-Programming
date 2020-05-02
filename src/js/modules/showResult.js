@@ -61,6 +61,8 @@ class ShowResult {
                 DOMElements.info.style.display = "none";
             },
         });
+
+        DOMElements.conteiner.classList.remove("show");
     }
 
     createResultBoard() {
@@ -75,7 +77,7 @@ class ShowResult {
         </div>
       `;
 
-        DOMElements.conteiner.appendChild(div);
+        document.querySelector("main").insertBefore(div, DOMElements.conteiner);
         // animate result board
         DOMElements.playAgainBtn = document.querySelector(".play-again-btn");
         DOMElements.playAgainBtn.addEventListener("click", playAgain);

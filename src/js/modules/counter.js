@@ -4,6 +4,9 @@ import {
 import {
     quiz
 } from "../data/quiz";
+import {
+    DOMElements
+} from "../data/DOMElements";
 
 class CounterPoints {
     constructor() {
@@ -14,6 +17,7 @@ class CounterPoints {
     //check correct answer
     checkAnswer() {
         const checkedBtn = document.querySelectorAll(".checked");
+        const allGoodAnswers = [...DOMElements.answersElements].filter(btn => btn.dataset.correct === "true")
         const content = [];
         const currentAnswers = [];
 
@@ -22,13 +26,13 @@ class CounterPoints {
 
             currentAnswers.push(answer);
             content.push(btn.innerText);
-        })
+        });
 
         let isCorrect = currentAnswers.every((answer) => answer === "true");
 
         if (currentAnswers.length === 0) isCorrect = false;
 
-        if (isCorrect)
+        if (isCorrect && currentAnswers.length === allGoodAnswers.length)
             parameters.points += this.points;
 
         parameters.usersAnswers[parameters.currentQuestion - 1] = content;

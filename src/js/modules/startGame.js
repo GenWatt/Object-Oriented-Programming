@@ -10,6 +10,7 @@ class StartGame {
         anime({
             targets: DOMElements.startBoard,
             translateY: [0, -1200],
+            height: [450, 0],
             duration: 800,
         });
 
