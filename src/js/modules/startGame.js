@@ -1,6 +1,7 @@
 import {
     DOMElements
 } from "../data/DOMElements";
+import anime from 'animejs/lib/anime.es.js';
 
 class StartGame {
     constructor() {}

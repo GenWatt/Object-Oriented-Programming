@@ -13,10 +13,13 @@ import { SetTime } from "./modules/setTimeOfTimer";
 import { SetQuestion } from "./modules/setQuestionNumber";
 import { ShowCorrectAnswers } from "./modules/showCorrectAnswers";
 
-new SetTime().createOptionsBtn();
-new SetQuestion().createOptionsBtn();
+const configTimeForAnswer =  new SetTime();
+const configNumberQuestions =  new SetQuestion();
 const again = new PlayAgain();
 const showAnswers = new ShowCorrectAnswers();
+
+configTimeForAnswer.createOptionsBtn();
+configNumberQuestions.createOptionsBtn();
 
 function init() {
   const factory = new BoardFactory();
@@ -36,6 +39,10 @@ function init() {
     if (parameters.interface !== "menu") parameters.interface = "result";
     Timer.clearTimer();
     factory.showInterface();
+    DOMElements.playAgainBtn.addEventListener("click",  ()=> {
+      again.playAgain(document.querySelector(".show-answers-conteiner"));
+      showAnswers.resetCounter();
+    });
     return showAnswers.createBoxForAnswers();
   }
   const randomNumbers = new Random().returnRandomCounts();
@@ -52,12 +59,7 @@ function init() {
   );
 }
 
-function playAgain() {
-  again.playAgain(document.querySelector(".show-answers-conteiner"));
-  showAnswers.resetCounter();
-}
-
 DOMElements.startBtn.addEventListener("click", init);
 DOMElements.nextBtn.addEventListener("click", init);
 
-export { playAgain, init };
+export {init };

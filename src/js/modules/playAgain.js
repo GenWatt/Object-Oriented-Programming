@@ -7,9 +7,9 @@ import {
 import {
     reset
 } from "../data/parameters";
+import anime from 'animejs/lib/anime.es.js';
 class PlayAgain {
     constructor() {}
-
     // play again
     playAgain(conteiner) {
 

@@ -5,6 +5,7 @@ import Timer from "./timer";
 import {
     reset,
 } from "../data/parameters";
+import anime from 'animejs/lib/anime.es.js';
 
 class ShowMenu {
     constructor() {}

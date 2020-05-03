@@ -7,6 +7,7 @@ import {
 import {
     init
 } from "../index";
+import anime from 'animejs/lib/anime.es.js';
 
 let interval;
 

@@ -7,6 +7,7 @@ import {
 import {
     playAgain,
 } from "../index";
+import anime from 'animejs/lib/anime.es.js';
 
 class ShowResult {
     constructor() {}
@@ -80,7 +81,6 @@ class ShowResult {
         document.querySelector("main").insertBefore(div, DOMElements.conteiner);
         // animate result board
         DOMElements.playAgainBtn = document.querySelector(".play-again-btn");
-        DOMElements.playAgainBtn.addEventListener("click", playAgain);
         DOMElements.reslutBoard = document.querySelector(".result-board");
         DOMElements.resultHeader = document.querySelector("h1");
 
