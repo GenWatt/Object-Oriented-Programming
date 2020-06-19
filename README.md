@@ -1,45 +1,32 @@
 # Object-Oriented-Programming
 
-##Quiz wielokrotnego wyboru
-
--Animacje w anime.js,
-
--classy w js (OOP),
-
--próba zastosowania wzorca Fabryka,
-
--Responsywna strona,
-
--Lsoowanie pytań i układu odpowiedzi,
-
--W podsumowaniu quizu generowanie poprawnych rozwiązań(Na zielono) i błędnie zaznaczone przez użytkowanika(czerwono),
-
--Aplikację moża otworzyć w gh-pages.
-
-##Technologie użyte w projekcie:
-
--HTML5,
-
--SCSS,
-
--JavaScript z anime.js,
-
--webpack.
-
-##Czego się nauczyłem?
-
--ierwszy projekt w anime.js,
-
--Lepsze poruszanie się po pluginach i loaderach w webpacku,
-
--Classy w javascript oraz kilka wzorców projektowych, jeden z nich postanowiłem zastosować w tym projekcie,
-
--poznawanie kolejnych funkcji SCSS,
-
--podzielenie projektu na moduły.
-
-##Dalsze rozwijanie projektu:
-
-- Planuje dodać typescript
-
-####Aby pobrać należy wpisać komendę git fetch [remote-name]
+## Quiz wielokrotnego wyboru
+<ul>
+  <li>Animacje w anime.js<li>
+  <li>classy w js (OOP)</li>
+  <li>próba zastosowania wzorca Fabryka</li>
+  <li>Responsywna strona</li>
+  <li>Lsoowanie pytań i układu odpowiedzi</li>
+  <li>W podsumowaniu quizu generowanie poprawnych rozwiązań(Na zielono) i błędnie zaznaczone przez użytkowanika(czerwono)</li>
+  <li>Aplikację moża otworzyć w gh-pages</li>
+</ul>
+## Technologie użyte w projekcie:
+<ul>
+  <li>HTML5</li>
+  <li>SCSS</li>
+  <li>JavaScript z anime.js</li>
+  <li>webpack</li>
+ <ul>
+## Czego się nauczyłem?
+ <ul>
+  <li>Pierwszy projekt w którym użyłem anime.js</li>
+  <li>Lepsze poruszanie się po pluginach i loaderach w webpacku</li>
+  <li>Classy w javascript oraz kilka wzorców projektowych, jeden z nich postanowiłem zastosować w tym projekcie</li>
+  <li>poznawanie kolejnych funkcji SCSS</li>
+  <li>podzielenie projektu na moduły</li>
+ </ul>
+## Dalsze rozwijanie projektu:
+<ul>
+  <li>Planuje dodać typescript</li>
+</ul>
+## Aby pobrać należy wpisać komendę git fetch [remote-name]
